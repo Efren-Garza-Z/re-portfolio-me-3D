@@ -18,3 +18,30 @@ Puedes instalar Three.js utilizando npm:
 
 ```bash
 npm install three
+```
+
+## Cómo Ejecutar el Proyecto
+
+1. **Clona el repositorio**:
+
+   ```bash
+   git clone https://github.com/Efren-Garza-Z/Portfolio-me-3D.git
+   ```
+2. **Navega al directorio del proyecto**:
+
+   ```bash
+   cd Portfolio-me-3D
+   ```
+
+3. **Instala las dependencias**:
+
+   ```bash
+   npm install
+   ```
+4. **Ejecuta el proyecto**:
+
+   ```bash
+   npm run dev
+   ```
+
+   
