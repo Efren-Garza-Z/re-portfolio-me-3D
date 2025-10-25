@@ -9,6 +9,7 @@ import useAlert from "../hooks/useAlert";
 import  Alert  from "../components/Alert";
 import  Loader  from "../components/Loader";
 import { OrbitControls } from "@react-three/drei";
+import RobotDance from "../models/RobotDance.jsx";
 
 const Contact = () => {
   const formRef = useRef();
@@ -141,16 +142,17 @@ const Contact = () => {
         </form>
       </div>
 
-      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
-      <Canvas camera={{ zoom: 4, position: [25,4, -45] }} >
-          <ambientLight intensity={2} />
-          <Suspense fallback={null}>
-            <Patricio />
+        <div style={{
+          padding: "4rem",
+          // --- Estilos para centrar ---
+          display: 'flex',              // 1. Habilita Flexbox
+          justifyContent: 'center',     // 2. Centra Horizontalmente
+          alignItems: 'center',         // 3. Centra Verticalmente
+          minHeight: '100vh',
+        }}>
 
-          </Suspense>
-          <OrbitControls />
-        </Canvas>
-      </div>
+            <RobotDance />
+        </div>
     </section>
   );
 };
