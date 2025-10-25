@@ -1,47 +1,79 @@
-# Portfolio-me-3D
+# 🚀 Portfolio
 
-Este es un proyecto personal de portafolio creado por Efren-Garza-Z. El objetivo de este proyecto es mostrar habilidades y proyectos en un formato tridimensional.
+A modern 3D portfolio built with React and Three.js using React Three Fiber. Interactive scenes, smooth animations, responsive UI and a contact form powered by EmailJS — optimized with Vite and styled with Tailwind CSS.
 
-## Estado del Proyecto
+## Features
+- 3D models and scenes with `@react-three/fiber` and `@react-three/drei`
+- Smooth UI animations using `framer-motion`
+- Responsive layout with Tailwind CSS
+- Contact form using `@emailjs/browser`
+- Iconography with `react-icons` and `lucide-react`
+- Timeline section using `react-vertical-timeline-component`
+- Fast development and build via Vite
 
-Actualmente, el proyecto se encuentra en la etapa de **commit inicial**. Se añadirán más detalles sobre su propósito y funcionalidad en futuras actualizaciones.
+## Tech Stack
+- JavaScript / React 18
+- Three.js via `@react-three/fiber` and `@react-three/drei`
+- Styling: Tailwind CSS
+- Bundler: Vite
+- Animations: Framer Motion
+- Email: EmailJS (`@emailjs/browser`)
+- Routing: `react-router-dom`
 
-## Dependencias
+Key dependencies:
+- `@react-three/fiber`
+- `@react-three/drei`
+- `framer-motion`
+- `tailwindcss`
+- `vite`
+- `@emailjs/browser`
+- `react-router-dom`
+- `react-icons`, `lucide-react`
+- `react-vertical-timeline-component`
 
-Para ejecutar este proyecto, asegúrate de tener las siguientes dependencias instaladas:
+## Getting started
 
-- **Node.js** (versión 14 o superior)
-- **npm** (gestor de paquetes de Node.js)
-- **Three.js** (biblioteca de JavaScript para gráficos 3D)
+Prerequisites
+- Node.js (16+ recommended)
+- npm
 
-Puedes instalar Three.js utilizando npm:
+Clone and install:
+```bash
+git clone <your-repo-url>
+cd portfolio-3d
+npm install
+```
+Run in development:
 
 ```bash
-npm install three
+npm run dev
 ```
 
-## Cómo Ejecutar el Proyecto
+Open http://localhost:5173 (or the address shown by Vite).
 
-1. **Clona el repositorio**:
+Build for production:
 
-   ```bash
-   git clone https://github.com/Efren-Garza-Z/Portfolio-me-3D.git
-   ```
-2. **Navega al directorio del proyecto**:
+```bash
+npm run build
+```
 
-   ```bash
-   cd Portfolio-me-3D
-   ```
+## Project structure (example)
+- src/ — app source code
+  - components/ — UI and 3D components
+  - pages/ — route pages (home, about, projects, contact)
+  - scenes/ — three-fiber scenes and models
+  - styles/ — Tailwind entry and global CSS
+- public/ — static assets
+- vite.config.js, package.json, tailwind.config.js
 
-3. **Instala las dependencias**:
+### Tips
+- Keep 3D assets optimized (low poly / compressed textures) for web performance.
+- Use React Suspense and lazy loading for heavy scenes or textures.
+- Configure EmailJS keys in environment variables and avoid committing secrets.
 
-   ```bash
-   npm install
-   ```
-4. **Ejecuta el proyecto**:
+## Contact
+david.1308200@gmail.com
 
-   ```bash
-   npm run dev
-   ```
 
-   
+## License
+This project is licensed under the MIT License.
