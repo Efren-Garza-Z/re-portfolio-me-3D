@@ -69,7 +69,7 @@ export const skills = [{
         type: "Frontend",
     },
     {
-        imageUrl: nextjs,
+        imageUrl: next,
         name: "nextjs",
         type: "Frontend",
     },
