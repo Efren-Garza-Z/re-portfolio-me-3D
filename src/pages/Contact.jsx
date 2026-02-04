@@ -9,7 +9,7 @@ import useAlert from "../hooks/useAlert";
 import  Alert  from "../components/Alert";
 import  Loader  from "../components/Loader";
 import { OrbitControls } from "@react-three/drei";
-import RobotDance from "../models/RobotDance.jsx";
+import Scene from "../components/scene/Scene.tsx";
 
 const Contact = () => {
   const formRef = useRef();
@@ -17,8 +17,10 @@ const Contact = () => {
   const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState("idle");
+  const [isTyping, setIsTyping] = useState(true) // Controla animación del modelo
 
-  const handleChange = ({ target: { name, value } }) => {
+
+    const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
   };
 
@@ -142,17 +144,9 @@ const Contact = () => {
         </form>
       </div>
 
-        <div style={{
-          padding: "4rem",
-          // --- Estilos para centrar ---
-          display: 'flex',              // 1. Habilita Flexbox
-          justifyContent: 'center',     // 2. Centra Horizontalmente
-          alignItems: 'center',         // 3. Centra Verticalmente
-          minHeight: '100vh',
-        }}>
-
-            <RobotDance />
-        </div>
+      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
+          <Scene isTyping={isTyping} />
+      </div>
     </section>
   );
 };

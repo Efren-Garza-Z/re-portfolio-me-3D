@@ -7,16 +7,13 @@ import javascript from './javascript.svg'
 import mongodb from './mongodb.svg'
 import motion from './motion.svg'
 import mui from './mui.svg'
-import nextjs from './nextjs.svg'
+import next from './next.svg'
 import nodejs from './nodejs.svg'
 import react from './react.svg'
-import redux from './redux.svg'
 import python from './python.svg'
-import sass from './sass.svg'
 import tailwindcss from './tailwindcss.svg'
 import typescript from './typescript.svg'
 import linkedin from './linkedin.svg'
-import twitter from './twitter.svg'
 import car from './car.svg'
 import estate from './estate.svg'
 import pricewise from './pricewise.svg'
@@ -32,12 +29,26 @@ import java from './java.svg'
 import golang from './golang.svg'
 import postgresql from './postgresql.svg'
 import angular from './angular.svg'
-import school from './school.svg'
-import games from './games.svg'
-
+import redhat from './redhat.svg'
+import swagger from './swagger.svg'
+import linux from './Linux.svg'
+import dbeaver from './DBeaver.svg'
+import mysql from './MySQL.svg'
+import robot from './robot.svg'
+import apple from './apple.svg'
+import rewrite from './rewrite.svg'
+import data from './data.svg'
+import whatsapp from './whatsapp.svg'
 export {
-    games,
-    school,
+    whatsapp,
+    data,
+    rewrite,
+    apple,
+    robot,
+    mysql,
+    dbeaver,
+    linux,
+    swagger,
     angular,
     postgresql,
     golang,
@@ -51,15 +62,12 @@ export {
     mongodb,
     motion,
     mui,
-    nextjs,
+    next,
     nodejs,
     react,
-    redux,
-    sass,
     tailwindcss,
     typescript,
     linkedin,
-    twitter,
     car,
     estate,
     pricewise,
@@ -71,5 +79,6 @@ export {
     soundon,
     soundoff,
     python,
-    springboot
+    springboot,
+    redhat
 }

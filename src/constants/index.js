@@ -1,12 +1,13 @@
-import { meta, shopify, tesla } from "../assets/images";
-import ctb from "../assets/images/ctb.jpg";
-import Banregio from "../assets/icons/Banregio.png";
-import codelingo from "../assets/icons/codelingo.png";
+import Banregio from "../assets/images/Banregio.png";
+import pepsico from "../assets/images/pepsico.png";
+import jazz from "../assets/images/jazz.jpeg";
 import {
-    car,
-    contact,
+    whatsapp,
+    pricewise,
+    data,
+    apple,
+    robot,
     css,
-    estate,
     git,
     github,
     html,
@@ -14,15 +15,22 @@ import {
     linkedin,
     mui,
     nodejs,
-    pricewise,
     react,
-    redux,
-    snapgram,
-    summiz,
     tailwindcss,
     threads,
     python,
-    springboot, java, golang, typescript, angular, school, games,
+    springboot,
+    java,
+    golang,
+    typescript,
+    angular,
+    next,
+    redhat,
+    swagger,
+    linux,
+    dbeaver,
+    postgresql,
+    mysql, rewrite
 } from "../assets/icons";
 
 export const skills = [{
@@ -31,14 +39,14 @@ export const skills = [{
     type: "Frontend",
 },
     {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
+        imageUrl: tailwindcss,
+        name: "Tailwind CSS",
+        type: "Frontend",
     },
     {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
+        imageUrl: mui,
+        name: "Material-UI",
+        type: "Frontend",
     },
     {
         imageUrl: html,
@@ -51,9 +59,59 @@ export const skills = [{
         type: "Frontend",
     },
     {
-        imageUrl: mui,
-        name: "Material-UI",
+        imageUrl: react,
+        name: "React",
         type: "Frontend",
+    },
+    {
+        imageUrl: angular,
+        name: "angular",
+        type: "Frontend",
+    },
+    {
+        imageUrl: next,
+        name: "nextjs",
+        type: "Frontend",
+    },
+    {
+        imageUrl: git,
+        name: "Git",
+        type: "Version Control",
+    },
+    {
+        imageUrl: github,
+        name: "GitHub",
+        type: "Version Control",
+    },
+    {
+        imageUrl: redhat,
+        name: "Red Hat",
+        type: "Cloud",
+    },
+    {
+        imageUrl: swagger,
+        name: "Swagger",
+        type: "Test",
+    },
+    {
+        imageUrl: linux,
+        name: "Linux",
+        type: "OS",
+    },
+    {
+        imageUrl: postgresql,
+        name: "postgresql",
+        type: "DB",
+    },
+    {
+        imageUrl: mysql,
+        name: "Mysql",
+        type: "DB",
+    },
+    {
+        imageUrl: dbeaver,
+        name: "Dbeaver",
+        type: "Gestor DB",
     },
     {
         imageUrl: nodejs,
@@ -61,33 +119,18 @@ export const skills = [{
         type: "Backend",
     },
     {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
         imageUrl: python,
         name: "python",
-        type: "Frontend",
-    },
-    {
-        imageUrl: springboot,
-        name: "Spring Boot",
         type: "Backend",
     },
     {
         imageUrl: java,
         name: "Java",
+        type: "Backend",
+    },
+    {
+        imageUrl: springboot,
+        name: "Spring Boot",
         type: "Backend",
     },
     {
@@ -100,94 +143,111 @@ export const skills = [{
         name: "typescript",
         type: "Backend",
     },
-    {
-        imageUrl: angular,
-        name: "angular",
-        type: "Backend",
-    },
 
 
 
 ];
 
-export const experiences = [{
-    title: "Frontend Developer",
-    company_name: "CBT",
-    icon: ctb,
-    iconBg: "#accbe1",
-    date: "March 2024 - April 2024",
-    points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-},
+export const experiences = [
     {
-        title: "Fullstack Developer",
-        company_name: "Banregio",
-        icon: Banregio,
+        title: "Fullstack Developer Jr",
+        company_name: "BANREGIO",
+        icon: Banregio, // Asegúrate de tener este icono importado
         iconBg: "#fbc3bc",
-        date: "February 2025 - Present",
+        date: "January 2025 - Present",
         points: [
-            "Building and maintaining microservices with Spring Boot, PostgreSQL, and REST APIs.",
-            "Developing front-end features with Angular 18 and Next.js, following corporate UI standards.",
-            "Collaborating in an Agile team environment with daily stand-ups and sprint reviews.",
-            "Integrating Swagger for API documentation and writing unit tests to ensure system reliability.",
+            "Design and development of microservices using Java (Spring Boot/WebFlux) and Python (FastAPI). ",
+            "Creation of analysis models using Markov chains specifically for fraud prevention. ",
+            "Development of web interfaces with Angular and application deployment on OCP4 (OpenShift).",
+            "Active participation in Agile methodologies through daily stand-ups and team task tracking.",
         ],
     },
     {
-        title: "Frontend Developer",
-        company_name: "CodeLingo",
-        icon: codelingo,
-        iconBg: "#e0f7fa",
-        date: "August 2024 - January 2025",
+        title: "Fullstack Web Developer (Freelance)",
+        company_name: "Estudio Unghie Jazz",
+        icon: jazz,
+        iconBg: "#e2c0ed",
+        date: "September 2025 - November 2025",
         points: [
-            "Designed and implemented a web platform for English learning tailored to programmers.",
-            "Developed responsive UI components using React.js, Tailwind CSS, and Framer Motion.",
-            "Improved user engagement by 25% through interactive features and gamification.",
-            "Worked closely with UX designers to deliver a modern, accessible interface.",
+            "Comprehensive design and development of a Single Page Application (SPA) using React 19 and Tailwind CSS.",
+            "Implementation of a responsive interface and performance optimization using Vite.",
+            "Integration of serverless services like Firebase for storage and EmailJS for automated appointment management.",
+            "Focused on customer acquisition and catalog display through optimized UX/UI design.",
+        ],
+    },
+    {
+        title: "Warehouse Assistant",
+        company_name: "PEPSICO",
+        icon: pepsico, // Asegúrate de importar un logo de Pepsico si lo tienes
+        iconBg: "#e0f7fa",
+        date: "October 2022 - January 2025",
+        points: [
+            "Inventory control and order management using SAP, ensuring precise stock accuracy. ",
+            "Forklift operation for merchandise organization following strict safety protocols. ",
+            "Maintained handling safety and organizational standards within a high-volume warehouse environment. ",
         ],
     },
 ];
 
 export const socialLinks = [{
-    name: 'Contact',
-    iconUrl: contact,
-    link: '/contact',
-},
+        name: 'Whatsapp',
+        iconUrl: whatsapp,
+        link: 'https://wa.me/522462136643',
+    },
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/Efren-Garza-Z',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/efren-david-garza-zacamolpa-9344b1238/',
     }
 ];
 
-export const projects = [{
-    iconUrl: pricewise,
-    theme: 'btn-back-red',
-    name: 'Asesor-Contable-y-Fiscal',
-    description: 'Soy un Asesor Contable y Fiscal dedicado a brindar soluciones financieras personalizadas. Mi objetivo es ayudarte a gestionar tus impuestos y contabilidad de manera eficiente, asegurando que cumplas con todas tus obligaciones fiscales mientras optimizas tus recursos. Con experiencia en la elaboración de contabilidad general, análisis de estados financieros y manejo de nóminas, me esfuerzo por ofrecer un servicio confiable y adaptado a tus necesidades.',
-    link: 'https://asesor-contable-y-fiscal.vercel.app/',
-},
+export const projects = [
     {
-        iconUrl: games,
-        theme: 'btn-back-green',
-        name: 'Game Blocks',
-        description: 'Game Blocks is a fun and educational platform where kids learn basic programming and logic by building their own games. Through interactive challenges, they develop problem-solving skills and explore coding in an engaging, hands-on way.',
-        link: 'https://gameblock.vercel.app/',
-    },
-    {
-        iconUrl: school,
-        theme: 'btn-back-blue',
-        name: 'ICB',
-        description: 'Learning English has never been so easy and attractive. Join our fully interactive classes and experience a teaching method focused on conversation and practice. We are here to guide you through every step of the way, ensuring you acquire English proficiency in an effective and fun way.',
+        iconUrl: robot,
+        theme: 'btn-back-red',
+        name: 'ICB - AI Interactive Learning',
+        description: 'A cutting-edge Learning Management System (LMS) that integrates Google Gemini AI to provide real-time feedback on writing and IELTS preparation. It features an immersive 3D interface built with Three.js and React Three Fiber to enhance user engagement.',
         link: 'https://gemini-3-threejs.vercel.app/',
     },
+    {
+        iconUrl: apple, // O cualquier icono que represente robustez/backend
+        theme: 'btn-back-yellow',
+        name: 'AI Educational API (Go)',
+        description: 'A high-performance RESTful API built with Go and the Gin framework. It integrates Google Gemini AI for asynchronous prompt processing and file analysis. The system includes secure JWT authentication, PostgreSQL integration via GORM, and is fully documented with Swagger for easy integration.',
+        link: 'https://educational-platforms-back-727266244738.us-central1.run.app/swagger/index.html',
+    },
+    {
+        iconUrl: rewrite, // O un icono de Gmail/Chrome
+        theme: 'btn-back-pink',
+        name: 'Gmail AI Rewrite Assistant',
+        description: 'A Chrome Extension that integrates Gemini Nano directly into Gmail using the native Rewriter API. It allows users to transform email drafts instantly—changing tones to Formal or Friendly and adjusting lengths—all processed locally within the browser for maximum privacy and speed.',
+        link: 'https://youtu.be/aUL5-0BUUww',
+    },
+    {
+        iconUrl: data, // O un icono que represente Python/Data
+        theme: 'btn-back-yellow',
+        name: 'FastAPI Game Management CRUD',
+        description: 'A robust backend implementation using FastAPI and PostgreSQL to manage users and game catalogs. It features a complete CRUD system with SQLAlchemy as ORM, Pydantic for data validation, and Alembic for database migrations, following professional clean code standards.',
+        link: 'https://github.com/Efren-Garza-Z/fs-fast-api-crud-con-postgre',
+    },
+    {
+        iconUrl: pricewise,
+        theme: 'btn-back-green',
+        name: 'Tax & Accounting Landing Page',
+        description: 'A professional landing page for a public accountant, featuring a custom AI Chatbot integration via react-chatbot-kit to streamline client inquiries. Built with React and Tailwind CSS, it focuses on high conversion, modern UI/UX, and accessibility for financial services.',
+        link: 'https://asesor-contable-y-fiscal.vercel.app/',
+    },
+    {
+        iconUrl: threads,
+        theme: 'btn-back-green',
+        name: 'StackBlocks 3D Game',
+        description: 'An immersive 3D web game built with Three.js where players stack moving blocks to build the tallest tower possible. It features real-time physics, dynamic lighting, and a minimalist isometric design, demonstrating advanced React Three Fiber capabilities.',
+        link: 'https://gameblock.vercel.app/',
+    }
 
 ];
