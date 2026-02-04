@@ -10,13 +10,10 @@ import mui from './mui.svg'
 import nextjs from './nextjs.svg'
 import nodejs from './nodejs.svg'
 import react from './react.svg'
-import redux from './redux.svg'
 import python from './python.svg'
-import sass from './sass.svg'
 import tailwindcss from './tailwindcss.svg'
 import typescript from './typescript.svg'
 import linkedin from './linkedin.svg'
-import twitter from './twitter.svg'
 import car from './car.svg'
 import estate from './estate.svg'
 import pricewise from './pricewise.svg'
@@ -32,8 +29,26 @@ import java from './java.svg'
 import golang from './golang.svg'
 import postgresql from './postgresql.svg'
 import angular from './angular.svg'
-
+import redhat from './redhat.svg'
+import swagger from './swagger.svg'
+import linux from './linux.svg'
+import dbeaver from './dbeaver.svg'
+import mysql from './mysql.svg'
+import robot from './robot.svg'
+import apple from './apple.svg'
+import rewrite from './rewrite.svg'
+import data from './data.svg'
+import whatsapp from './whatsapp.svg'
 export {
+    whatsapp,
+    data,
+    rewrite,
+    apple,
+    robot,
+    mysql,
+    dbeaver,
+    linux,
+    swagger,
     angular,
     postgresql,
     golang,
@@ -50,12 +65,9 @@ export {
     nextjs,
     nodejs,
     react,
-    redux,
-    sass,
     tailwindcss,
     typescript,
     linkedin,
-    twitter,
     car,
     estate,
     pricewise,
@@ -67,5 +79,6 @@ export {
     soundon,
     soundoff,
     python,
-    springboot
+    springboot,
+    redhat
 }

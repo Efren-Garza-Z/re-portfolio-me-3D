@@ -9,6 +9,7 @@ import useAlert from "../hooks/useAlert";
 import  Alert  from "../components/Alert";
 import  Loader  from "../components/Loader";
 import { OrbitControls } from "@react-three/drei";
+import Scene from "../components/scene/Scene.tsx";
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,8 +17,10 @@ const Contact = () => {
   const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState("idle");
+  const [isTyping, setIsTyping] = useState(true) // Controla animación del modelo
 
-  const handleChange = ({ target: { name, value } }) => {
+
+    const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
   };
 
@@ -142,14 +145,7 @@ const Contact = () => {
       </div>
 
       <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
-      <Canvas camera={{ zoom: 4, position: [25,4, -45] }} >
-          <ambientLight intensity={2} />
-          <Suspense fallback={null}>
-            <Patricio />
-
-          </Suspense>
-          <OrbitControls />
-        </Canvas>
+          <Scene isTyping={isTyping} />
       </div>
     </section>
   );
