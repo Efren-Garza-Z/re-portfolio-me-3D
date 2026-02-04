@@ -7,7 +7,7 @@ import javascript from './javascript.svg'
 import mongodb from './mongodb.svg'
 import motion from './motion.svg'
 import mui from './mui.svg'
-import nextjs from './nextjs.svg'
+import next from './next.svg'
 import nodejs from './nodejs.svg'
 import react from './react.svg'
 import python from './python.svg'
@@ -62,7 +62,7 @@ export {
     mongodb,
     motion,
     mui,
-    nextjs,
+    next,
     nodejs,
     react,
     tailwindcss,
