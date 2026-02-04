@@ -35,10 +35,10 @@ import {
 } from "../assets/icons";
 
 export const skills = [{
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
-    },
+    imageUrl: css,
+    name: "CSS",
+    type: "Frontend",
+},
     {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
